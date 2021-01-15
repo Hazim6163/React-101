@@ -2,7 +2,7 @@
 # Me 4 Life &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; My Code &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; React   
 <br>
 
-## Level-1 Plan
+## branch Level-1 explain :
 - [x] Generate Template from the Hygen.
 - [x] Create Component.
 - [x] Import and use it in the App Component.
@@ -10,6 +10,7 @@
 - [x] Passing Props to the Component. 
 
 ### passing function throw components
+
 ```js
 const function = (params) => {
   console.log(params[0])
@@ -18,6 +19,7 @@ const function = (params) => {
 // in the nested : 
 <button onClick={() => {function(params)}}>
 ```
+
 note use it as **arrow** function in the Nested component
 ---
 <br>
