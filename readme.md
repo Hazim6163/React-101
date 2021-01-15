@@ -4,12 +4,12 @@
 
 ## Docs 101 : 
 1. [Create React App and Templates](https://github.com/Hazim6163/React-101#create-react-app-)
-   1. [run react app](https://github.com/Hazim6163/React-101#run-react-app-)
-   2. [Hygen Template](https://github.com/Hazim6163/React-101#hygen-template)
+   - [run react app](https://github.com/Hazim6163/React-101#run-react-app-)
+   - [Hygen Template](https://github.com/Hazim6163/React-101#hygen-template)
 
 
 2. [Notes about React](https://github.com/Hazim6163/React-101#my-notes-about-react)
-   1. [Fetching Data From the Web](https://github.com/Hazim6163/React-101#before-fetching-data-from-the-web-you-need-to-know)
+   - [Fetching Data From the Web](https://github.com/Hazim6163/React-101#before-fetching-data-from-the-web-you-need-to-know)
 
 3. [My TODO 101](https://github.com/Hazim6163/React-101#my-todo-101-)
 
