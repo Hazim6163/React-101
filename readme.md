@@ -3,9 +3,9 @@
 <br>
 
 ## Level-1 Plan
-1. Generate Template from the Hygen.
-2. Create Component.
-3. Import and use it in the App Component.
+- [x] Generate Template from the Hygen.
+- [x] Create Component.
+- [x] Import and use it in the App Component.
 4. Using the State inside the Component.
 5. Passing Props to the Component. 
 ---

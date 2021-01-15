@@ -1,0 +1,14 @@
+.navbar{
+    padding: 30px;
+    font-size: large;
+}
+
+a{
+    padding: 4px 16px; 
+    text-decoration: none;
+    color: darkblue;
+}
+
+.brand{
+    color: blueviolet
+}
