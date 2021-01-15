@@ -8,7 +8,16 @@
 - Fetch inside JS File instead of using it directly from Component it Self to reuse Whenever We want that.
 - Using Then Keyword.  
 - Handle Errors and throw it.
-- 
+
+### Important:  Map Function to List: 
+Note the Brackets right there it's deferent on the normal JS
+```js 
+{orgs.map(org => (
+  <div key={org.id}>
+      {org.name}
+  </div>
+))}
+```
 
 ## Branch Level-2 explain:
 - [x] Using React Router 
