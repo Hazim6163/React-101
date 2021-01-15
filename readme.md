@@ -2,6 +2,14 @@
 # Me 4 Life &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; My Code &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; React   
 <br>
 
+## Branch Level 3 Fetching Data:
+- Objects Map to List in React  
+- Setting useEffect Function.
+- Fetch inside JS File instead of using it directly from Component it Self to reuse Whenever We want that.
+- Using Then Keyword.  
+- Handle Errors and throw it.
+- 
+
 ## Branch Level-2 explain:
 - [x] Using React Router 
 - [x] Pages: Home, Contact, About
