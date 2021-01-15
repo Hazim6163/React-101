@@ -3,16 +3,15 @@
 <br>
 
 ## Docs 101 : 
-1. [Create React App and Templates](https://github.com/Hazim6163/React-101#create-react-app-)
-   - [run react app](https://github.com/Hazim6163/React-101#run-react-app-)
-   - [Hygen Template](https://github.com/Hazim6163/React-101#hygen-template)
+1. [Create React App and Templates](#-create-react-app-)
+   - [run react app](#run-react-app-)
+   - [Hygen Template](#-hygen-template)
 
+2. [Notes about React](#-my-notes-about-react)
+   - [Fetching Data From the Web](#fetching-data-to-know)
+   - [React Router](#-react-router-)
 
-2. [Notes about React](https://github.com/Hazim6163/React-101#my-notes-about-react)
-   - [Fetching Data From the Web](https://github.com/Hazim6163/React-101#before-fetching-data-from-the-web-you-need-to-know)
-   - [React Router](https://github.com/Hazim6163/React-101#react-router-)
-
-3. [My TODO 101](https://github.com/Hazim6163/React-101#my-todo-101-)
+3. [My TODO 101](#my-todo-101-)
 
 ---
 <br>
@@ -46,7 +45,7 @@ please check it [Link](https://github.com/Hazim6163/Generators#generate-starter-
 <br>
 
 ## My Notes About React
-### before fetching data from the web you need to know
+### Fetching data to know
 - useEffect Hook 
 - useState Hook 
 - custom Hook 
