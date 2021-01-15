@@ -2,15 +2,6 @@
 # Me 4 Life &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; My Code &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; React   
 <br>
 
-<style> 
-a{
-    color: red
-}
-body{
-    color: green
-}
-</style>
-
 ## Docs 101 : 
 1. [Create React App and Templates](https://github.com/Hazim6163/React-101#create-react-app-)
    - [run react app](https://github.com/Hazim6163/React-101#run-react-app-)
