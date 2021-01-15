@@ -2,6 +2,15 @@
 # Me 4 Life &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; My Code &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; React   
 <br>
 
+## Level-1 Plan
+1. Generate Template from the Hygen.
+2. Create Component.
+3. Import and use it in the App Component.
+4. Using the State inside the Component.
+5. Passing Props to the Component. 
+---
+<br>
+
 ## Docs 101 : 
 1. [Create React App and Templates](#create-react-app-)
    - [run react app](#run-react-app-)
