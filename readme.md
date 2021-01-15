@@ -51,6 +51,29 @@ please check it [Link](https://github.com/Hazim6163/Generators#generate-starter-
 - custom Hook 
 the Hooks above is in the Net Ninjas [YouTube ](https://www.youtube.com/watch?v=gv9ugDJ1ynU&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=14) Tutorial from the Lesson 14 to 20 short Videos don't cate that is really good. 
 
+### React Router : 
+``` bash
+## change version when use this in future
+npm install react-router-dom@5
+```
+then import in APP : 
+``` js
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+```
+1. Wrap App in Router 
+2. Wrap the Pages in Switch 
+3. Wrap Component with Rout and **exact path** see The Net Ninja's when need Help check that: Router / Exact Path Ex. [#YouTube](https://www.youtube.com/watch?v=EmUa_tcSM-k&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=22) [#GitHub](https://github.com/iamshaunjp/Complete-React-Tutorial/tree/lesson-22)
+4. then you can use Link when you need to 
+    ``` js
+    import {Link} from 'react-router-dom'
+    <Link to="/">Home</Link>
+    ```
+
+
+
+
+    
+
 ---
 <br>
 
@@ -66,7 +89,7 @@ For each bottoms Ideas Branch to cover the Idea and will be Ex for it .
 
 - [ ] Async in Component 
 
-- [ ] React Router
+- [x] React Router
 
 - [x] useState hook
 
@@ -78,6 +101,7 @@ For each bottoms Ideas Branch to cover the Idea and will be Ex for it .
 
 - [ ] Component life cycle
 
-- [x] Create Component class Python Generator.
+- [ ] Create Component class Python Generator.
 
+- [ ] Clean up after fetch check the Net Ninjas lesson [#24](https://www.youtube.com/watch?v=aKOQtGLT-Yk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=24) 
 
