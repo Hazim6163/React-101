@@ -3,13 +3,13 @@
 <br>
 
 ## Docs 101 : 
-1. [Create React App and Templates](#-create-react-app-)
+1. [Create React App and Templates](#create-react-app-)
    - [run react app](#run-react-app-)
-   - [Hygen Template](#-hygen-template)
+   - [Hygen Template](#hygen-template)
 
-2. [Notes about React](#-my-notes-about-react)
+2. [Notes about React](#my-notes-about-react)
    - [Fetching Data From the Web](#fetching-data-to-know)
-   - [React Router](#-react-router-)
+   - [React Router](#react-router-)
 
 3. [My TODO 101](#my-todo-101-)
 
