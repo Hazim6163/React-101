@@ -6,8 +6,19 @@
 - [x] Generate Template from the Hygen.
 - [x] Create Component.
 - [x] Import and use it in the App Component.
-4. Using the State inside the Component.
-5. Passing Props to the Component. 
+- [x] Using the State inside the Component.
+- [x] Passing Props to the Component. 
+
+### passing function throw components
+```js
+const function = (params) => {
+  console.log(params[0])
+}
+<Name name="Muhammad" functionName={function}>
+// in the nested : 
+<button onClick={() => {function(params)}}>
+```
+note use it as **arrow** function in the Nested component
 ---
 <br>
 
@@ -21,6 +32,7 @@
    - [React Router](#react-router-)
 
 3. [My TODO 101](#my-todo-101-)
+4. [Props Functions](#passing-function-throw-components)
 
 ---
 <br>
