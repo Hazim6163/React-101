@@ -1,25 +1,30 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/home/Home';
+import Contact from './components/contact/Contact';
+import About from './components/About/About';
+
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <header className="App-header">
-
-        <h1>Welcome to React  |  Me 4 Life</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Brand from './Brand'
-import Button from './Button'
 import Links from './Links'
 import './navbar.css'
+
 function Navbar() {
     const [isLoggedIn, setStatus] = useState(false)
     const handleClick = (name) => {
