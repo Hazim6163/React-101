@@ -56,9 +56,34 @@ the Hooks above is in the Net Ninjas [YouTube ](https://www.youtube.com/watch?v=
 ## change version when use this in future
 npm install react-router-dom@5
 ```
-then import in APP : 
+then import in App : 
 ``` js
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './Create';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
 ```
 1. Wrap App in Router 
 2. Wrap the Pages in Switch 
