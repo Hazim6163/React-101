@@ -1,0 +1,15 @@
+{
+    "orgs": [{
+            "name": "Me 4 Life",
+            "owner": "all",
+            "location": "de",
+            "id": 1
+        },
+        {
+            "name": "Egy Bank",
+            "owner": "all",
+            "location": "egy",
+            "id": 2
+        }
+    ]
+}

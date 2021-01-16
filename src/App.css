@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color:#4c4b4b
 }
 
 .App-header {
@@ -15,4 +16,8 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.logout{
+  background-color: #a50808;
 }
