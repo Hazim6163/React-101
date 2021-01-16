@@ -1,29 +1,32 @@
 
 # Me 4 Life &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; My Code &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; React   
 <br>
+<div style="display:"none">
+t
+</div>
 
-## Branch Level 3 Fetching Data:
-- Objects Map to List in React  
-- Setting useEffect Function.
-- Fetch inside JS File instead of using it directly from Component it Self to reuse Whenever We want that.
-- Using Then Keyword.  
-- Handle Errors and throw it.
+## What need to know before React: 
+- [x] HTML
+- [x] CSS
+- [x] JS
+---
+<br>
 
-### Important:  Map Function to List: 
-Note the Brackets right there it's deferent on the normal JS
-```js 
-{orgs.map(org => (
-  <div key={org.id}>
-      {org.name}
-  </div>
-))}
-```
+## Docs 101 : 
+1. [Create React App and Templates](#create-react-app-)
+   - [run react app](#run-react-app-)
+   - [Hygen Template](#hygen-template)
 
-## Branch Level-2 explain:
-- [x] Using React Router 
-- [x] Pages: Home, Contact, About
-  we have explain it in the read me please [check](#react-router-)
-  That was Awesome !! .  
+2. [Notes about React](#my-notes-about-react)
+   - [Fetching Data From the Web](#fetching-data-to-know)
+   - [React Router](#react-router-)
+
+3. [My TODO 101](#my-todo-101-)
+4. [Props Functions](#passing-function-throw-components)
+
+---
+<br>
+
 
 ## branch Level-1 explain :
 - [x] Generate Template from the Hygen.
@@ -47,27 +50,38 @@ note use it as **arrow** function in the Nested component
 ---
 <br>
 
-## Docs 101 : 
-1. [Create React App and Templates](#create-react-app-)
-   - [run react app](#run-react-app-)
-   - [Hygen Template](#hygen-template)
-
-2. [Notes about React](#my-notes-about-react)
-   - [Fetching Data From the Web](#fetching-data-to-know)
-   - [React Router](#react-router-)
-
-3. [My TODO 101](#my-todo-101-)
-4. [Props Functions](#passing-function-throw-components)
-
+## Branch Level-2 explain:
+- [x] Using React Router 
+- [x] Pages: Home, Contact, About
+  we have explain it in the read me please [check](#react-router-)
+  That was Awesome !! .  
 ---
 <br>
 
-## What need to know before React: 
-- [x] HTML
-- [x] CSS
-- [x] JS
+## Branch Level 3 Fetching Data:
+- Objects Map to List in React  
+- Setting useEffect Function.
+- Fetch inside JS File instead of using it directly from Component it Self to reuse Whenever We want that.
+- Using Then Keyword.  
+- Handle Errors and throw it.
+
+### Important:  Map Function to List: 
+Note the Brackets right there it's deferent on the normal JS
+```js 
+{orgs.map(org => (
+  <div key={org.id}>
+      {org.name}
+  </div>
+))}
+```
+when using JSON Sever be sure to run it on other Port of the React App otherwise will be in Trouble
+```bach
+npx json-server --watch  myData.json --port 8000 
+```
 ---
 <br>
+
+
 
 ## Create React App : 
 <pre>
