@@ -2,6 +2,16 @@
 # Me 4 Life &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; My Code &nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp; React   
 <br>
 
+
+### My Notes after 2 Projects . 
+react is very easy to create front end web pages you need just to remember some Strategies Like : 
+- user snnipt in the vs code is very important 
+- create global vars to pass the data each componenets 
+- use funcitons file in the Utils folder and stay updating the methods 
+- use get class function and random id to create sections and so on 
+- every small part can be component and it easy to controll 
+- you need just to some practice and thats it
+
 [Branches Explain](#complete-react-tutorial)
 
 ## What need to know before React: 
