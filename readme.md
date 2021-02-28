@@ -11,6 +11,8 @@ react is very easy to create front end web pages you need just to remember some 
 - use get class function and random id to create sections and so on 
 - every small part can be component and it easy to controll 
 - you need just to some practice and thats it
+- use VS extenstion to add css class names random numbers and letters
+- [functions file](https://gist.github.com/Mee4Life/886ddc502c81adde0db3f50da6cb2090)
 
 [Branches Explain](#complete-react-tutorial)
 
