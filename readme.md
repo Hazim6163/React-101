@@ -70,6 +70,35 @@ const getCls = baseName => {
 }
 ```
 
+
+### Router Example
+```js
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+
+return (
+    <Router>
+      <div className={getCls('app')}>
+        <Brand p={p} />
+        <Switch>
+          <Route  path="/by-time/">
+            {token && <ByTime p={p} />}
+            {!token && get404()}
+          </Route>
+          <Route  path="/timeline/:id">
+            {token && <TimeLine p={p} />}
+            {!token && get404()}
+          </Route>
+          <Route exact path="/">
+            <Home p={p} />
+          </Route>
+        </Switch>
+
+      </div>
+    </Router>
+  )
+```
+
 ### Notes : 
 please check the User Snnipt in the VS Code .
 
