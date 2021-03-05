@@ -14,194 +14,83 @@ react is very easy to create front end web pages you need just to remember some 
 - use VS extenstion to add css class names random numbers and letters
 - [functions file](https://gist.github.com/Mee4Life/886ddc502c81adde0db3f50da6cb2090)
 
-[Branches Explain](#complete-react-tutorial)
 
-## What need to know before React: 
-- [x] HTML
-- [x] CSS
-- [x] JS
----
-<br>
-
-
-## Docs 101 : 
-1. [Create React App and Templates](#create-react-app-)
-   - [run react app](#run-react-app-)
-   - [Hygen Template](#hygen-template)
-
-2. [Notes about React](#my-notes-about-react)
-   - [Fetching Data From the Web](#fetching-data-to-know)
-   - [React Router](#react-router-)
-
-3. [To Know 101](#todo-101-)
-4. [Functions inside Props ](#passing-function-throw-components)
-5. [Branches explain](#complete-react-tutorial)
-   - [Getting-Started](#branch-level-1-explain-)
-   - [React-Router](#branch-level-2-explain)
-   - [Server Requests](#branch-level-3-fetching-data)
-
----
-<br>
-
-## Create React App : 
-
-### Hygen Template
-please check it [Link](https://github.com/Hazim6163/Generators#generate-starter-react-app)
-
-### Default Create React App:
-<pre>
-npm install -g create react app
-</pre>
-and then in the console : 
-<pre>
-npx create-react-app myFirstReactApp
-</pre>
-
-### Run React APP : 
-
-<pre>
-cd myFirstReactApp
-npm start
-</pre>
-
-
-
----
-<br>
-
-# My Notes About React
-
-## ⚠ Warnings:
-### missed Commit 
-Level 3 Branch Fetching and Listing the  commit is pushed in the Level 2 Branch last Commit.
-
-<br />
-
-## Fetching data to know
-- useEffect Hook 
-- useState Hook 
-- custom Hook 
-the Hooks above is in the Net Ninjas [YouTube ](https://www.youtube.com/watch?v=gv9ugDJ1ynU&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=14) Tutorial from the Lesson 14 to 20 short Videos don't cate that is really good. 
-
-<br />
-
-## React Router : 
-``` bash
-## change version when use this in future
-npm install react-router-dom@5
-```
-then import in App : 
-``` js
-import Navbar from './Navbar';
-import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Create from './Create';
-
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/create">
-              <Create />
-            </Route>
-          </Switch>
-        </div>
-      </div>
-    </Router>
-  );
-}
-
-export default App;
-```
-1. Wrap App in Router 
-2. Wrap the Pages in Switch 
-3. Wrap Component with Rout and **exact path** see The Net Ninja's when need Help check that: Router / Exact Path Ex. [#YouTube](https://www.youtube.com/watch?v=EmUa_tcSM-k&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=22) [#GitHub](https://github.com/iamshaunjp/Complete-React-Tutorial/tree/lesson-22)
-4. then you can use Link when you need to 
-  ``` js
-  import {Link} from 'react-router-dom'
-  <Link to="/">Home</Link>
-  ```
-   
----
-<br>
-
-## TODO 101 : 
-For each bottoms Ideas Branch to cover the Idea and will be Ex for it .
-
-- [x] Render  
-- [x] State 
-- [x] Props 
-- [x] Events 
-- [x] Async in Component 
-- [x] React Router
-- [x] useState hook
-- [x] Forms in React 
-- [x] Styling using CSS
-- [x] Component life cycle
-- [ ] Clean up after fetch check the Net Ninjas lesson [#24](https://www.youtube.com/watch?v=aKOQtGLT-Yk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=24) 
-
----
-<br />
-
-# Complete React Tutorial: 
-
-## branch Level-1 explain :
-- [x] Generate Template from the Hygen.
-- [x] Create Component.
-- [x] Import and use it in the App Component.
-- [x] Using the State inside the Component.
-- [x] Passing Props to the Component. 
-
-### passing function throw components
+### Imports :
 ```js
-const function = (params) => {
-  console.log(params[0])
+import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { cWH } from './utils/functions'
+```
+
+
+### Extract Data from the Local Stroage Functions
+```javascript
+// extract local storage values functions
+  const getIsDark = () => {
+    return localStorage.getItem('isDark') &&
+      localStorage.getItem('isDark') === "true"
+  }
+  const getFontSize = () => {
+    let fSize = 20
+    if (localStorage.getItem('fontSize'))
+      fSize = parseInt(localStorage.getItem('fontSize'))
+    return fSize
+  }
+  const getToken = () => {
+    return localStorage.getItem('token')
+  }
+  const getUserCard = () => {
+    return JSON.parse(localStorage.getItem("userCard"))
+  }
+```
+
+### App State Expamle 
+```javascript 
+// setup app state
+const [isDark, setIsDark] = useState(getIsDark())
+const [token, setUserToken] = useState(getToken())
+const [userCard, setUserCard] = useState(getUserCard())
+const [isVisibleNav, setVisibleNav] = useState(false)
+const { height, width } = cWH();
+```
+
+### Get CSS Class Names Example : 
+```javascript
+const getCls = baseName => {
+    let className = isDark ? baseName + ' ' + baseName + '-dark' : baseName + ' ' + baseName + '-light'
+    width < 650 ? className = className + ' ' + baseName + '-' + 'sm' : className = className
+    width <= 800 && width >= 650 ? className = className + ' ' + baseName + '-' + 'md' : className = className
+    width > 800 ? className = className + ' ' + baseName + '-' + 'xl' : className = className
+    return className
 }
-<Name name="Muhammad" functionName={function}>
-// in the nested : 
-<button onClick={() => {function(params)}}>
 ```
 
-note use it as **arrow** function in the Nested component
+### Notes : 
+please check the User Snnipt in the VS Code .
 
----
-<br>
 
-## Branch Level-2 explain:
-- [x] Using React Router 
-- [x] Pages: Home, Contact, About
-  we have explain it in the read me please [check](#react-router-)
-  That was Awesome !! .  
----
-<br>
+|        | description        |
+| ------------- |:-------------:|
+| os      | create state object  |
+| oncl     | on click       |  
+| exp     | export p       |  
+| exex     | export ex       |  
+|  getx    |   get x       |  
+|  getp    |   get p      |  
+|   getclass   |    create getCls()     |  
+|   getwrapper   |  get wrapper div       |  
+|   getContainer    | get containetr div         |  
+|    getDiv |    get div    |    
+|    spex |    spread out x object    |  
 
-## Branch Level 3 Fetching Data:
-- Objects Map to List in React  
-- Setting useEffect Function.
-- Fetch inside JS File instead of using it directly from Component it Self to reuse Whenever We want that.
-- Using Then Keyword.  
-- Handle Errors and throw it.
 
-### Important:  Map Function to List: 
-Note the Brackets right there it's deferent on the normal JS
-```js 
-{orgs.map(org => (
-  <div key={org.id}>
-      {org.name}
-  </div>
-))}
-```
-when using JSON Sever be sure to run it on other Port of the React App otherwise will be in Trouble
-```bach
-npx json-server --watch  myData.json --port 8000 
-```
----
-<br>
+
+
+
 
 
