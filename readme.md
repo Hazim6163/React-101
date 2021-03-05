@@ -55,7 +55,7 @@ import { cWH } from './utils/functions'
 const [isDark, setIsDark] = useState(getIsDark())
 const [token, setUserToken] = useState(getToken())
 const [userCard, setUserCard] = useState(getUserCard())
-const [isVisibleNav, setVisibleNav] = useState(false)
+const [vsNav, setVsNav] = useState(false)
 const { height, width } = cWH();
 ```
 
