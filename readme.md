@@ -24,7 +24,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { cWH } from './utils/functions'
+import { CWH } from './utils/functions'
 ```
 
 
@@ -56,7 +56,7 @@ const [isDark, setIsDark] = useState(getIsDark())
 const [token, setUserToken] = useState(getToken())
 const [userCard, setUserCard] = useState(getUserCard())
 const [vsNav, setVsNav] = useState(false)
-const { height, width } = cWH();
+const { height, width } = CWH();
 ```
 
 ### Get CSS Class Names Example : 
